@@ -1,0 +1,140 @@
+:root {
+    --assest: #0d5b9c;
+    --dark-blue: #021d32;
+    --gray: #eeeeee;
+    --dark-gray: #757575;
+    --light-blue: #2563e6;
+    --light-blue-100: #d6dded;
+    --border-radius: 52px;
+
+
+    /* google font */
+
+    --google-font: "Inter", sans-serif;
+
+
+    /* Font-size */
+    --font-16: 16px;
+    --font-20: 20px;
+    --font-25: 25px;
+    --font-60: 60px;
+    --font-64: 64px;
+    --font-77: 77px;
+    --font-100: 100px;
+    --font-200: 200;
+    --font-300: 300;
+    --font-400: 400;
+    --font-500: 500;
+    --font-600: 600;
+    --font-700: 700;
+
+
+}
+
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--google-font);
+    background-color: var(--gray);
+}
+
+.btn {
+    background-color: var(--light-blue);
+    padding: 22px 30px;
+    font-size: var(--font-20);
+    display: flex;
+    gap: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--google-font);
+    font-weight: var(--font-500);
+    color: var(--dark-blue);
+}
+
+h1 {
+    font-size: var(--font-100);
+    line-height: 99px;
+    font-weight: var(--font-700);
+}
+
+h1 span {
+    font-size: var(--font-77);
+    color: var(--assest);
+}
+.flex-center{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+/* hero section start  */
+section.hero-section {
+    border-radius: 0 0 100px 0px;
+    position: relative;
+    z-index: 999;
+    background-color: var(--gray);
+}
+.hero-section .hero-container {
+    position: relative;
+}
+.hero-section .down-arrow {
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+    width: 64px;
+    height: 64px;
+    border-radius: var(--border-radius);
+    background-color: var(--light-blue-100);
+}
+.hero-section .down-arrow a i {
+    font-size: var(--font-25);
+    color: var(--light-blue);
+}
+.hero-section hr.divider {
+    height: 5px;
+    width: 346px;
+    display: inline-block;
+    background: var(--light-blue);
+    border: none;
+    margin-bottom: 133px;
+}
+.hero-container .hero-content h1 {
+    padding: 120px 0 133px;
+}
+
+/* Hero imae css */
+.hero-imge-container .hero-img img {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    transform: translateY(-100px);
+}
